@@ -10,3 +10,6 @@
 [submodule "morituri/extern/python-deps"]
 	path = morituri/extern/python-deps
 	url = git://github.com/thomasvs/python-deps
+[submodule "morituri/extern/pyxdg"]
+	path = morituri/extern/pyxdg
+	url = https://github.com/takluyver/pyxdg.git

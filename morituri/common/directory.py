@@ -29,7 +29,7 @@ class Directory(log.Loggable):
 
     def getConfig(self):
         try:
-            from xdg import BaseDirectory
+            from morituri.extern.xdg import BaseDirectory
             directory = BaseDirectory.save_config_path('morituri')
             path = os.path.join(directory, 'morituri.conf')
             self.info('Using XDG, configuration file is %s' % path)
@@ -41,7 +41,7 @@ class Directory(log.Loggable):
 
     def getCache(self, name=None):
         try:
-            from xdg import BaseDirectory
+            from morituri.extern.xdg import BaseDirectory
             path = BaseDirectory.save_cache_path('morituri')
             self.info('Using XDG, cache directory is %s' % path)
         except ImportError:
@@ -61,7 +61,7 @@ class Directory(log.Loggable):
         paths = []
 
         try:
-            from xdg import BaseDirectory
+            from morituri.extern.xdg import BaseDirectory
             path = BaseDirectory.save_cache_path('morituri')
             self.info('For XDG, read cache directory is %s' % path)
             paths.append(path)

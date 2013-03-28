@@ -41,6 +41,21 @@ musicbrainzngs_PYTHON = \
 	musicbrainzngs/musicbrainz.py \
 	musicbrainzngs/mbxml.py
 
+xdgdir = $(PYTHONLIBDIR)/morituri/extern/xdg
+
+xdg_PYTHON = \
+	xdg/__init__.py \
+	xdg/BaseDirectory.py \
+	xdg/Config.py \
+	xdg/DesktopEntry.py \
+	xdg/Exceptions.py \
+	xdg/IconTheme.py \
+	xdg/IniFile.py \
+	xdg/Locale.py \
+	xdg/Menu.py \
+	xdg/MenuEditor.py \
+	xdg/Mime.py \
+	xdg/RecentFiles.py
 
 EXTRA_DIST = python-command/scripts/help2man
 
